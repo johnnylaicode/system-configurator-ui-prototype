@@ -1,0 +1,824 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Start - Define variable values for HTML head section -->
+        <!-- Start - Define website master global variable values  -->
+        <!-- End - Define website master global variable values -->
+    <!-- End - Define variable values for HTML head section -->
+
+    <!-- Start - HTML head section -->
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta name="viewport" content="width=device-width">
+    <title>XYZCo&nbsp;|&nbsp;System Settings</title>
+    <meta name="Keywords" content="" />
+    <meta name="Description" content="" />
+    <!-- End - HTML head section -->
+
+    <!-- Start - External stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/styles/css-all-min.css" />
+    
+    <!-- End - External stylesheet -->
+     
+
+    <!--[if IE]>
+    <style type="text/css" media="screen">
+        #menu ul li {float: left; width: 100%;}
+    </style>
+    <![endif]-->
+    <!--[if lt IE 7]>
+    <style type="text/css" media="screen">
+        body {
+            behavior: url(csshover.htc);
+            font-size: 100%;
+        }
+        #menu ul li a {
+            height: 1%;
+        } 
+        #menu a, #menu h2 {
+            font: bold 0.7em/1.4em arial, helvetica, sans-serif;
+        }
+    </style>
+    <![endif]-->
+
+    <!--[if IE 8]>
+    <!--
+    <style type="text/css" media="screen">
+        body {
+            overflow-y: scroll; /* scroll bar in IE 8 */
+        }
+    </style>
+    <![endif]-->
+    
+    
+    <script type="text/JavaScript" src="./scripts/jquery-2.1.4.min.js"></script> 
+    <script type="text/JavaScript" src="./scripts/jsp_accordionMenu.min.js"></script> 
+    <script type="text/JavaScript" src="./scripts/jsp_passwordVisbleInvisible.min.js"></script> 
+    <script type="text/JavaScript" src="./scripts/jsp_displayConfirmMessage.min.js"></script> 
+    <script type="text/JavaScript" src="./scripts/jsp_showHideDisplay.min.js"></script> 
+    <script type="text/JavaScript" src="./scripts/jsp_checkEmptyDataByElementId.min.js"></script> 
+    <script type="text/JavaScript" src="./scripts/jsp_checkPasswordFormatByElementId.min.js"></script> 
+    <script type="text/JavaScript" src="./scripts/jsp_checkPasswordAndConfirmPasswordByElementIds.min.js"></script> 
+
+</head>
+<body onScroll="document.cookie='scroll_position_y='+window.pageYOffset" onLoad='window.scrollTo(0,0)'>    
+    <!--[if lt IE 7]>
+    <p style="background:#FFC0CB;font-weight:bold;">
+    This website works best with Internet Explore version 7 or later. You are using an older version of Internet Explore.
+    </p>
+    <![endif]-->
+
+    <noscript>
+    <br />
+    <p style="background:#FF0000;font-weight:bold;color:#FFFFFF;">
+    JavaScript is turned off in your web browser. 
+    <br />
+    Please turn it on to take full advantage of this website, then refresh the web page.
+    </p>
+    <br />
+    </noscript>
+        
+    <!-- *************************************
+    Start - OVERALL DOCUMENT WRAPPER CONTAINER 
+    ************************************** -->
+    <div id="doc4-fluid"> <!-- Start - YUI div "doc4" (modified to 1200px width; original width was 974px), "yui-t4" (2 columns, 180px on right) overall document container, 950px width, 2 columns, 180px right column -->
+        <div id="logo-top-fluid" style="position:relative;background-color:#FFFFFF; border:0px solid red;"> <!-- Start - div id="logo-top" -->
+            <div class="left-side"> <!-- Start - div class="left-side" -->
+                    <a href="/home.html" style="margin-left:5px;"><img src="/styles/images/sample-logo-2-80px-red.png" alt="XYZCo.com" title="XYZCo.com" style="height:100%; max-width:200px;position:absolute;bottom:0px;"/></a>
+            </div> <!-- End - div class="left-side" -->
+
+            <div class="right-side"> <!-- Start - div class="right-side" -->
+            </div> <!-- End - div class="right-side" -->
+       </div> <!-- End - div id="logo-top" -->
+
+        <div class="cleardiv"></div> 
+        <div class="cleardiv"></div> 
+
+        <div id="nav-main-top-fluid" style="padding-left:5px;"> <!-- Start - div id="nav-main" -->
+            <div class="left-side" style="border:0px solid green;"> <!-- Start - div id="nav-main" -->
+                <!-- Start - Top menu -->                            
+                <!-- Start - Include user control -->
+                                               
+<!-- Start - Top menu -->                            
+<div id="a-w-block" name="a-w-block" class="a-w">
+    <a id="a-m-b-block" name="a-m-b-block" class="a-m-b m-b-3-l" onclick="toggleDropdown();"></a>
+    
+    <div id="d-c-block" name="d-c-block" class="d-c">
+        <ul id="accordion-block" name="accordion-block" class="accordion">
+            <li>
+                <a href="/admin.html"><div class="link">Administrator</div></a>
+            </li>
+            <li>
+                <a href="/system.html"><div class="link">System Settings</div></a>
+            </li>
+            <li>
+                <a href="/gateway.html"><div class="link">Gateway</div></a>
+            </li>
+            <li>
+                <a href="/local-area-network.html"><div class="link">Local Area Network (LAN)</div></a>
+            </li>
+            <li>
+                <div class="link">Sensor Network<i class="fa fa-chevron-down"></i></div>
+                <ul class="submenu">
+                    <li><a href="/sensor.html">Sensor Configuration</a></li>
+                    <li class="menu-block-bottom-border"><a href="/status-sensor.html">Sensor Status</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/hosting.html"><div class="link">Hosting</div></a>
+            </li>
+                            
+            <li>
+                <a href="/firmware.html"><div class="link">Firmware</div></a>
+            </li>
+            <li>
+                <div class="link">Status<i class="fa fa-chevron-down"></i></div>
+                <ul class="submenu">
+                    <li><a href="/status-system.html">Gateway & LAN Status</a></li>                    <li><a href="/status-sensor.html">Sensor Status</a></li>
+                    <li class="menu-block-bottom-border"><a href="/system-log.html">Status Message Log</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/about2.html"><div class="link">About</div></a>
+            </li>
+            <li>
+                <a href="/index.html"><div class="link">Sign Out</div></a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+<!-- End - Top menu --> 
+
+                <!-- end - Include user control -->
+                <!-- End - Top menu -->  
+            </div>
+
+            <div class="right-side" style="background:transparent;border:0px solid blue;"> <!-- Start - div class="right-side" -->
+
+    
+            </div> <!-- End - div class="right-side" -->
+
+            <div class="cleardiv" style="display:none;"></div> 
+
+            <div id="nav-main-top-fluid-shadow" style="display:none;">
+                <div class="">
+                    <!-- Start - Search box -->
+                    <!-- End - Search box -->
+                </div> 
+            </div>
+        </div> <!-- End - div id="nav-main" -->
+
+        <div class="cleardiv"></div> 
+        
+                
+        <!-- *****************************************
+        Start - DOCUMENT HEADER CONTAINER (Header) 
+        ****************************************** -->  
+        <!-- ***************************************
+        End - DOCUMENT HEADER CONTAINER (Header)
+        **************************************** -->      
+
+
+        <!-- *****************************************
+        Start - DOCUMENT BODY CONTAINER (Content Body) 
+        ****************************************** -->   
+        
+    
+
+
+
+<!-- ************************************** 
+	Start - Generate ContentPlaceHolder
+*************************************** -->
+
+<!-- Start <div id="c-w-f"> -->
+<div id="c-w-f">
+
+    <!-- Start <div id="c-c-f"> -->
+    <div id="c-c-f">
+        
+        <!-- Start <div class="c-i-w-f"> -->
+        <div class="c-i-w-f">
+        
+ 
+            <!-- Start - Panel ID="MainContentPanel" - Use panel to set default button. Also set no postback. -->
+            <div id="MainContentPanel">
+                <h1 id="success-message" style="background-color: lightgreen; text-align: center; color: lightseagreen; margin-bottom: 5px; display: none;">
+                    Operation was successful.
+                </h1>
+
+                <h1 style="background-color: lightblue;">
+                    System Settings
+                </h1>
+
+                <!-- Start - Div block with title "Sign In" -->
+                <div class="c-b-s-w-f">
+
+                    <div class="c-b-c"> <!-- Start - div class="c-b-c" -->
+                        <!-- Start - Notice Message Panel -->
+                        <!-- End - Notice Message Panel -->
+
+
+
+                        <div class="cleardiv"></div>
+
+                        <!-- Start - Login Form -->
+
+<!-- Start - Update or Restore System Form -->
+    <form name="UpdateRestoreSystemForm"
+            action="" 
+            method=""
+            onsubmit="return false;">
+        
+        
+        <!-- Start - System Name -->
+        <div class="m-d-t-f f-s-1-mt">System Name:</div>
+        <div class="m-d-d-f f-s-1-md">
+            <input name="SystemName" 
+                    id="SystemName" 
+                    value=""
+                    type="text" maxlength="60" 
+                    class="u-i i-e-f-b i-e-f-f f-s-2-if"
+                    placeholder="" />
+            
+            <div class="cleardiv"></div>
+
+            <span id="SystemNameRequired" title="System name is required." style="color:Red;display:none;">System name is required. </span>
+            <span id="SystemNameRequiredSvrMsg" title="System name is required." style="color:Red;display:none;">Enter system name. </span>
+        </div>
+        <div class="cleardiv"></div>
+        <!-- End - System Name -->
+           
+        <!-- Start - Default Gateway -->
+        <div class="m-d-t-f f-s-1-mt">Default Gateway:</div>
+        <div class="m-d-d-f f-s-1-md" style="display:inline-block;">
+        <input name="DefaultGateway" 
+                id="DefaultGateway"
+                value=""
+                type="text" maxlength="60"
+                class="u-i i-e-f-b i-e-f-f f-s-2-if"
+                placeholder="" />
+            <div class="cleardiv"></div>
+        </div>
+        <div class="cleardiv"></div>
+        <!-- End - Default Gateway -->
+
+        <!-- Start - Preferred DNS -->
+        <div class="m-d-t-f f-s-1-mt">Preferred DNS:</div>
+        <div class="m-d-d-f f-s-1-md" style="display:inline-block;">
+        <input name="Dns1" 
+                id="Dns1"
+                value=""
+                type="text" maxlength="60"
+                class="u-i i-e-f-b i-e-f-f f-s-2-if"
+                placeholder="" />
+            <div class="cleardiv"></div>
+        </div>
+        <div class="cleardiv"></div>
+        <!-- End - Preferred DNS -->
+
+        <!-- Start - Alternate DNS -->
+        <div class="m-d-t-f f-s-1-mt">Alternate DNS:</div>
+        <div class="m-d-d-f f-s-1-md" style="display:inline-block;">
+        <input name="Dns2" 
+                id="Dns2"
+                value=""
+                type="text" maxlength="60"
+                class="u-i i-e-f-b i-e-f-f f-s-2-if"
+                placeholder="" />
+            <div class="cleardiv"></div>
+        </div>
+        <div class="cleardiv"></div>
+        <!-- End - Alternate DNS -->
+        
+            
+        <!-- Start - Use SNTP -->
+        <div class="m-d-t-f f-s-1-mt f-s-1-a-e-h">&nbsp;</div>
+        <div class="d-l-b-q-h"></div>
+        <div class="m-d-d-f f-s-1-md">
+            <input id="UseSntp" type="checkbox" name="UseSntp" value="YES" onchange="toggleDisplayWithChecbox()" />
+            <span style="margin-left:2px;">Use SNTP</span>
+        </div>
+        <div class="cleardiv"></div>
+<script type="text/javascript">
+function toggleDisplayWithChecbox()
+{
+    if($('#UseSntp').is(":checked"))
+    {
+        $("#SntpIpPanel").show();
+        $("#SetDateTimePanel").hide();
+    }
+    else
+    {
+        $("#SntpIpPanel").hide();
+        $("#SetDateTimePanel").show();
+    }
+}
+</script>
+        <!-- End - Use SNTP -->        
+            
+        <!-- Start - SNTP IP Address -->
+        <div id="SntpIpPanel" name="SntpIpPanel" style="display:none;">
+            <div class="m-d-t-f f-s-1-mt">SNTP IP Address:</div>
+            <div class="m-d-d-f f-s-1-md">
+                <input name="SntpIp" 
+                        id="SntpIp" 
+                        value=""
+                        type="text" maxlength="60" 
+                        class="u-i i-e-f-b i-e-f-f f-s-2-if"
+                        placeholder="" />
+
+                <div class="cleardiv"></div>
+
+                <span id="IpAddresspRequired" title="IP address is required." style="color:Red;display:none;">IP address is required. </span>
+            </div>
+            <div class="cleardiv"></div>
+        </div>
+        <!-- End - SNTP IP Address -->
+            
+
+        <!-- Start - Set Date and Time -->
+        <div id="SetDateTimePanel" name="SetDateTimePanel" style="display:block;">
+            <div class="m-d-t-f f-s-1-mt">Set Date and Time:</div>
+            <div class="m-d-d-f f-s-1-md">
+                <div style="position:relative;float:left;margin-right:10px;">
+                    <div class="m-d-t-f f-s-1-mt" style="width:39px;">Month</div>
+                    <div class="cleardiv"></div>
+
+<select name="MonthList" 
+        id="MonthList" 
+        class="i-d-f-b i-d-f-f f-s-1-d">
+    <option value="">---</option>
+<option value="1">January</option><option value="2">February</option><option value="3">March</option><option value="4">April</option><option value="5">May</option><option value="6">June</option><option value="7">July</option><option value="8">August</option><option value="9">September</option><option value="10">October</option><option value="11">November</option><option value="12">December</option> </select>                </div>
+                <div style="position:relative;float:left;margin-right:10px;">
+                    <div class="m-d-t-f f-s-1-mt" style="width:39px;">Day</div>
+                    <div class="cleardiv"></div>
+
+<select name="DayList" 
+        id="DayList" 
+        class="i-d-f-b i-d-f-f f-s-1-d">
+    <option value="">---</option>   
+<option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select>
+
+                </div>
+                <div style="position:relative;float:left;">
+                    <div class="m-d-t-f f-s-1-mt" style="width:39px;">Year</div>
+                    <div class="cleardiv"></div>
+
+<select name="YearList" 
+        id="YearList" 
+        class="i-d-f-b i-d-f-f f-s-1-d">
+<option value="">---</option><option value="2015">2015</option><option value="2016">2016</option><option value="2017">2017</option><option value="2018">2018</option><option value="2019">2019</option><option value="2020">2020</option><option value="2021">2021</option><option value="2022">2022</option><option value="2023">2023</option><option value="2024">2024</option><option value="2025">2025</option><option value="2026">2026</option><option value="2027">2027</option><option value="2028">2028</option><option value="2029">2029</option><option value="2030">2030</option><option value="2031">2031</option><option value="2032">2032</option><option value="2033">2033</option><option value="2034">2034</option><option value="2035">2035</option><option value="2036">2036</option><option value="2037">2037</option><option value="2038">2038</option><option value="2039">2039</option><option value="2040">2040</option><option value="2041">2041</option><option value="2042">2042</option><option value="2043">2043</option><option value="2044">2044</option><option value="2045">2045</option><option value="2046">2046</option><option value="2047">2047</option><option value="2048">2048</option><option value="2049">2049</option><option value="2050">2050</option><option value="2051">2051</option><option value="2052">2052</option><option value="2053">2053</option><option value="2054">2054</option><option value="2055">2055</option><option value="2056">2056</option><option value="2057">2057</option><option value="2058">2058</option><option value="2059">2059</option><option value="2060">2060</option><option value="2061">2061</option><option value="2062">2062</option><option value="2063">2063</option><option value="2064">2064</option><option value="2065">2065</option><option value="2066">2066</option><option value="2067">2067</option><option value="2068">2068</option><option value="2069">2069</option><option value="2070">2070</option><option value="2071">2071</option><option value="2072">2072</option><option value="2073">2073</option><option value="2074">2074</option><option value="2075">2075</option><option value="2076">2076</option><option value="2077">2077</option><option value="2078">2078</option><option value="2079">2079</option><option value="2080">2080</option><option value="2081">2081</option><option value="2082">2082</option><option value="2083">2083</option><option value="2084">2084</option><option value="2085">2085</option><option value="2086">2086</option><option value="2087">2087</option><option value="2088">2088</option><option value="2089">2089</option><option value="2090">2090</option><option value="2091">2091</option><option value="2092">2092</option><option value="2093">2093</option><option value="2094">2094</option><option value="2095">2095</option><option value="2096">2096</option><option value="2097">2097</option><option value="2098">2098</option><option value="2099">2099</option><option value="2100">2100</option><option value="2101">2101</option><option value="2102">2102</option><option value="2103">2103</option><option value="2104">2104</option><option value="2105">2105</option><option value="2106">2106</option><option value="2107">2107</option><option value="2108">2108</option><option value="2109">2109</option><option value="2110">2110</option><option value="2111">2111</option><option value="2112">2112</option><option value="2113">2113</option><option value="2114">2114</option><option value="2115">2115</option><option value="2116">2116</option><option value="2117">2117</option><option value="2118">2118</option><option value="2119">2119</option><option value="2120">2120</option><option value="2121">2121</option><option value="2122">2122</option><option value="2123">2123</option><option value="2124">2124</option><option value="2125">2125</option><option value="2126">2126</option><option value="2127">2127</option><option value="2128">2128</option><option value="2129">2129</option><option value="2130">2130</option><option value="2131">2131</option><option value="2132">2132</option><option value="2133">2133</option><option value="2134">2134</option><option value="2135">2135</option><option value="2136">2136</option><option value="2137">2137</option><option value="2138">2138</option><option value="2139">2139</option><option value="2140">2140</option><option value="2141">2141</option><option value="2142">2142</option><option value="2143">2143</option><option value="2144">2144</option><option value="2145">2145</option><option value="2146">2146</option><option value="2147">2147</option><option value="2148">2148</option><option value="2149">2149</option><option value="2150">2150</option></select>                </div>
+                
+                <div class="cleardiv"></div>
+                <div class="d-l-b-q-h"></div>
+                <div class="cleardiv"></div>
+                
+                <div style="position:relative;float:left;">
+                    <div class="m-d-t-f f-s-1-mt" style="width:39px;">Hour</div>
+                    <div class="cleardiv"></div>
+                    <select name="HourList"
+                        id="HourList" 
+                        class="i-d-f-b i-d-f-f f-s-1-d">
+                            <option value="">---</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="0">12</option>
+                    </select>
+                </div>
+                <div style="position:relative;float:left;text-align:center;width:9px;">
+                    <div class="m-d-t-f" style="margin:0px 2px 0px 3px;">&nbsp;</div>
+                    <div class="cleardiv"></div>
+                    <div class="m-d-t-f" style="margin:8px 2px 0px 3px;">:</div>
+                </div>
+                <div style="position:relative;float:left;">
+                    <div class="m-d-t-f f-s-1-mt" style="width:39px;">Minute</div>
+                    <div class="cleardiv"></div>
+                    <select name="MinList"
+                        id="MinList" 
+                        class="i-d-f-b i-d-f-f f-s-1-d">
+                            <option value="">---</option>
+                            <option value="00">00</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                            <option value="32">32</option>
+                            <option value="33">33</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                            <option value="40">40</option>
+                            <option value="41">41</option>
+                            <option value="42">42</option>
+                            <option value="43">43</option>
+                            <option value="44">44</option>
+                            <option value="45">45</option>
+                            <option value="46">46</option>
+                            <option value="47">47</option>
+                            <option value="48">48</option>
+                            <option value="49">49</option>
+                            <option value="50">50</option>
+                            <option value="51">51</option>
+                            <option value="52">52</option>
+                            <option value="53">53</option>
+                            <option value="54">54</option>
+                            <option value="55">55</option>
+                            <option value="56">56</option>
+                            <option value="57">57</option>
+                            <option value="58">58</option>
+                            <option value="59">59</option>
+                            <option value="60">60</option>
+                    </select>
+                    <div class="cleardiv"></div>
+                </div>
+                <div style="position:relative;float:left;text-align:center;width:9px;">
+                    <div class="m-d-t-f" style="margin:0px 2px 0px 3px;">&nbsp;</div>
+                    <div class="cleardiv"></div>
+                    <div class="m-d-t-f" style="margin:8px 2px 0px 3px;">:</div>
+                </div>
+                <div style="position:relative;float:left;">
+                    <div class="m-d-t-f f-s-1-mt" style="width:39px;">Second</div>
+                    <div class="cleardiv"></div>
+                    <select name="SecList"
+                        id="SecList" 
+                        class="i-d-f-b i-d-f-f f-s-1-d">
+                            <option value="">---</option>
+                            <option value="00">00</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                            <option value="32">32</option>
+                            <option value="33">33</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                            <option value="40">40</option>
+                            <option value="41">41</option>
+                            <option value="42">42</option>
+                            <option value="43">43</option>
+                            <option value="44">44</option>
+                            <option value="45">45</option>
+                            <option value="46">46</option>
+                            <option value="47">47</option>
+                            <option value="48">48</option>
+                            <option value="49">49</option>
+                            <option value="50">50</option>
+                            <option value="51">51</option>
+                            <option value="52">52</option>
+                            <option value="53">53</option>
+                            <option value="54">54</option>
+                            <option value="55">55</option>
+                            <option value="56">56</option>
+                            <option value="57">57</option>
+                            <option value="58">58</option>
+                            <option value="59">59</option>
+                            <option value="60">60</option>
+                    </select>
+                    <div class="cleardiv"></div>
+                </div>
+                <div style="position:relative;float:left;margin-left: 20px;">
+                    <div class="m-d-t-f f-s-1-mt" style="width:50px;">AM / PM</div>
+                    <div class="cleardiv"></div>
+                    <select name="AmPmList"
+                        id="AmPmList" 
+                        class="i-d-f-b i-d-f-f f-s-1-d">
+                        <option value="">---</option>
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option>
+                    </select>
+                    <div class="cleardiv"></div>
+                </div>
+                
+                <div class="cleardiv"></div>
+                <div class="d-l-b-q-h"></div>
+                <div class="cleardiv"></div>
+                
+               <div class="m-d-t-f f-s-1-mt">Time Zone</div>
+                <div class="cleardiv"></div>
+                <select name="TimeZoneList"
+                    id="TimeZoneList" 
+                    class="i-d-f-b i-d-f-f f-s-1-d">
+                        <option value="">- Select -</option>
+                        <option value="Pacific/Midway">(GMT-11:00) Midway Island, Samoa</option>
+                        <option value="America/Adak">(GMT-10:00) Hawaii-Aleutian</option>
+                        <option value="Etc/GMT+10">(GMT-10:00) Hawaii</option>
+                        <option value="Pacific/Marquesas">(GMT-09:30) Marquesas Islands</option>
+                        <option value="Pacific/Gambier">(GMT-09:00) Gambier Islands</option>
+                        <option value="America/Anchorage">(GMT-09:00) Alaska</option>
+                        <option value="America/Ensenada">(GMT-08:00) Tijuana, Baja California</option>
+                        <option value="Etc/GMT+8">(GMT-08:00) Pitcairn Islands</option>
+                        <option value="America/Los_Angeles">(GMT-08:00) Pacific Time (US & Canada)</option>
+                        <option value="America/Denver">(GMT-07:00) Mountain Time (US & Canada)</option>
+                        <option value="America/Chihuahua">(GMT-07:00) Chihuahua, La Paz, Mazatlan</option>
+                        <option value="America/Dawson_Creek">(GMT-07:00) Arizona</option>
+                        <option value="America/Belize">(GMT-06:00) Saskatchewan, Central America</option>
+                        <option value="America/Cancun">(GMT-06:00) Guadalajara, Mexico City, Monterrey</option>
+                        <option value="Chile/EasterIsland">(GMT-06:00) Easter Island</option>
+                        <option value="America/Chicago">(GMT-06:00) Central Time (US & Canada)</option>
+                        <option value="America/New_York">(GMT-05:00) Eastern Time (US & Canada)</option>
+                        <option value="America/Havana">(GMT-05:00) Cuba</option>
+                        <option value="America/Bogota">(GMT-05:00) Bogota, Lima, Quito, Rio Branco</option>
+                        <option value="America/Caracas">(GMT-04:30) Caracas</option>
+                        <option value="America/Santiago">(GMT-04:00) Santiago</option>
+                        <option value="America/La_Paz">(GMT-04:00) La Paz</option>
+                        <option value="Atlantic/Stanley">(GMT-04:00) Faukland Islands</option>
+                        <option value="America/Campo_Grande">(GMT-04:00) Brazil</option>
+                        <option value="America/Goose_Bay">(GMT-04:00) Atlantic Time (Goose Bay)</option>
+                        <option value="America/Glace_Bay">(GMT-04:00) Atlantic Time (Canada)</option>
+                        <option value="America/St_Johns">(GMT-03:30) Newfoundland</option>
+                        <option value="America/Araguaina">(GMT-03:00) UTC-3</option>
+                        <option value="America/Montevideo">(GMT-03:00) Montevideo</option>
+                        <option value="America/Miquelon">(GMT-03:00) Miquelon, St. Pierre</option>
+                        <option value="America/Godthab">(GMT-03:00) Greenland</option>
+                        <option value="America/Argentina/Buenos_Aires">(GMT-03:00) Buenos Aires</option>
+                        <option value="America/Sao_Paulo">(GMT-03:00) Brasilia</option>
+                        <option value="America/Noronha">(GMT-02:00) Mid-Atlantic</option>
+                        <option value="Atlantic/Cape_Verde">(GMT-01:00) Cape Verde Is.</option>
+                        <option value="Atlantic/Azores">(GMT-01:00) Azores</option>
+                        <option value="Europe/Belfast">(GMT) Greenwich Mean Time : Belfast</option>
+                        <option value="Europe/Dublin">(GMT) Greenwich Mean Time : Dublin</option>
+                        <option value="Europe/Lisbon">(GMT) Greenwich Mean Time : Lisbon</option>
+                        <option value="Europe/London">(GMT) Greenwich Mean Time : London</option>
+                        <option value="Africa/Abidjan">(GMT) Monrovia, Reykjavik</option>
+                        <option value="Europe/Amsterdam">(GMT+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna</option>
+                        <option value="Europe/Belgrade">(GMT+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague</option>
+                        <option value="Europe/Brussels">(GMT+01:00) Brussels, Copenhagen, Madrid, Paris</option>
+                        <option value="Africa/Algiers">(GMT+01:00) West Central Africa</option>
+                        <option value="Africa/Windhoek">(GMT+01:00) Windhoek</option>
+                        <option value="Asia/Beirut">(GMT+02:00) Beirut</option>
+                        <option value="Africa/Cairo">(GMT+02:00) Cairo</option>
+                        <option value="Asia/Gaza">(GMT+02:00) Gaza</option>
+                        <option value="Africa/Blantyre">(GMT+02:00) Harare, Pretoria</option>
+                        <option value="Asia/Jerusalem">(GMT+02:00) Jerusalem</option>
+                        <option value="Europe/Minsk">(GMT+02:00) Minsk</option>
+                        <option value="Asia/Damascus">(GMT+02:00) Syria</option>
+                        <option value="Europe/Moscow">(GMT+03:00) Moscow, St. Petersburg, Volgograd</option>
+                        <option value="Africa/Addis_Ababa">(GMT+03:00) Nairobi</option>
+                        <option value="Asia/Tehran">(GMT+03:30) Tehran</option>
+                        <option value="Asia/Dubai">(GMT+04:00) Abu Dhabi, Muscat</option>
+                        <option value="Asia/Yerevan">(GMT+04:00) Yerevan</option>
+                        <option value="Asia/Kabul">(GMT+04:30) Kabul</option>
+                        <option value="Asia/Yekaterinburg">(GMT+05:00) Ekaterinburg</option>
+                        <option value="Asia/Tashkent">(GMT+05:00) Tashkent</option>
+                        <option value="Asia/Kolkata">(GMT+05:30) Chennai, Kolkata, Mumbai, New Delhi</option>
+                        <option value="Asia/Katmandu">(GMT+05:45) Kathmandu</option>
+                        <option value="Asia/Dhaka">(GMT+06:00) Astana, Dhaka</option>
+                        <option value="Asia/Novosibirsk">(GMT+06:00) Novosibirsk</option>
+                        <option value="Asia/Rangoon">(GMT+06:30) Yangon (Rangoon)</option>
+                        <option value="Asia/Bangkok">(GMT+07:00) Bangkok, Hanoi, Jakarta</option>
+                        <option value="Asia/Krasnoyarsk">(GMT+07:00) Krasnoyarsk</option>
+                        <option value="Asia/Hong_Kong">(GMT+08:00) Beijing, Chongqing, Hong Kong, Urumqi</option>
+                        <option value="Asia/Irkutsk">(GMT+08:00) Irkutsk, Ulaan Bataar</option>
+                        <option value="Australia/Perth">(GMT+08:00) Perth</option>
+                        <option value="Australia/Eucla">(GMT+08:45) Eucla</option>
+                        <option value="Asia/Tokyo">(GMT+09:00) Osaka, Sapporo, Tokyo</option>
+                        <option value="Asia/Seoul">(GMT+09:00) Seoul</option>
+                        <option value="Asia/Yakutsk">(GMT+09:00) Yakutsk</option>
+                        <option value="Australia/Adelaide">(GMT+09:30) Adelaide</option>
+                        <option value="Australia/Darwin">(GMT+09:30) Darwin</option>
+                        <option value="Australia/Brisbane">(GMT+10:00) Brisbane</option>
+                        <option value="Australia/Hobart">(GMT+10:00) Hobart</option>
+                        <option value="Asia/Vladivostok">(GMT+10:00) Vladivostok</option>
+                        <option value="Australia/Lord_Howe">(GMT+10:30) Lord Howe Island</option>
+                        <option value="Etc/GMT-11">(GMT+11:00) Solomon Is., New Caledonia</option>
+                        <option value="Asia/Magadan">(GMT+11:00) Magadan</option>
+                        <option value="Pacific/Norfolk">(GMT+11:30) Norfolk Island</option>
+                        <option value="Asia/Anadyr">(GMT+12:00) Anadyr, Kamchatka</option>
+                        <option value="Pacific/Auckland">(GMT+12:00) Auckland, Wellington</option>
+                        <option value="Etc/GMT-12">(GMT+12:00) Fiji, Kamchatka, Marshall Is.</option>
+                        <option value="Pacific/Chatham">(GMT+12:45) Chatham Islands</option>
+                        <option value="Pacific/Tongatapu">(GMT+13:00) Nuku'alofa</option>
+                        <option value="Pacific/Kiritimati">(GMT+14:00) Kiritimati</option>
+                </select>
+                <div class="cleardiv"></div>
+            </div>
+            <div class="cleardiv"></div>
+        </div>
+        <!-- End - Set Date and Time -->
+        
+        <div class="cleardiv"></div>
+        <div class="d-l-b f-s-1-a-e-h"></div>
+        <div class="d-l-b f-s-1-a-e-h"></div>
+        <div class="cleardiv"></div>
+            
+        <!-- Start - "Update" and "Restore" buttons -->
+        <div class="m-d-t-f f-s-1-mt">&nbsp;</div>
+        <div class="m-d-d-f f-s-1-md">
+            <input type="submit" 
+                    name="UpdateSystemButton" 
+                    value="Update System" 
+                    onclick="document.getElementById('success-message').style.display='block';" 
+                    id="UpdateSystemButton" 
+                    class="i-b-r-b f-s-2-ib" />
+
+            <div class="cleardiv"></div>
+            <div class="d-l-b"></div>
+            <div class="cleardiv"></div>                    
+            
+            <input type="submit" 
+                    name="RestoreSystemButton" 
+                    value="Restore Factory Default Settings" 
+                    onclick="javascript:jsp_displayConfirmMessage('SYSTEM_RESTORE');
+                        document.getElementById('success-message').style.display='block';" 
+                    id="RestoreSystemButton" 
+                    class="i-b-r-b f-s-2-ib" />
+            
+            <div class="d-l-b"></div>
+            <div class="warning-message-block" style="position:relative;float:left;margin-left:5px;"> 
+                Updating or restoring defaults will disconnect remote devices. 
+            </div>
+
+            <div class="cleardiv"></div>
+            <div class="d-l-b"></div>
+            <div class="cleardiv"></div>                    
+
+            <input type="submit" 
+                name="CancelButton" 
+                value="Cancel" 
+                onclick="location.href='/home.html';" 
+                id="CancelButton" 
+                class="i-b-r-b f-s-2-ib" />
+        </div>
+        <!-- End - "Update" and "Restore" buttons -->
+
+            <div class="cleardiv"></div>
+            <div class="d-l-b"></div>
+            <div class="cleardiv"></div>                    
+
+    </form>
+
+<!-- End - Update or Restore System Form -->
+                        <!-- End - Login Form -->
+
+                    </div>  <!-- End - div class="c-b-c -->    
+
+                </div>			
+                <!-- End - Div block with title "Sign In" -->    
+
+            </div>
+            <!-- End - Panel ID="MainContentPanel" - Use panel to set default button. Also set no postback. -->
+
+
+        </div>
+        <!-- End <div class="c-i-w-f"> -->
+        
+    </div>
+    <!-- End <div id="c-c-f"> -->
+
+</div>
+<!-- End <div id="c-w-f"> -->
+
+<!-- ************************************** 
+	End - Generate ContentPlaceHolder
+*************************************** -->
+
+<!--
+        <div id="left-column" style="display:none;">
+
+I am left column
+
+        </div>
+
+
+        <div id="right-column" style="display:none;">
+
+I am right column
+
+        </div>
+
+
+        <div class="cleardiv"></div> 
+
+-->                            
+                            
+
+    </div>  <!-- End - YUI div "doc4" (974px width), "yui-t4" (2 columns, 180px on right) overall document container, 950px width, 2 columns, 180px right column -->
+    <!-- ***********************************
+    End - OVERALL DOCUMENT WRAPPER CONTAINER
+    ************************************ -->  
+
+    
+
+
+<div id="ft">
+    
+
+            <!-- Start - footer container -->
+
+            <div id="nav-main-footer-fluid">
+                <div class="left-side">
+                <!-- Start - Footer menu --> 
+                <!-- End - Footer menu -->  
+                </div>
+                <div class="right-side"> 
+                    &nbsp;
+                </div>
+            </div>		     		        
+
+            <div class="cleardiv"></div> 
+
+                <div id="footer-sub">
+                    <div style="text-align:-moz-center;"> <!-- Center for Firefox -->
+                                Copyright &copy; 
+                                All rights reserved.
+                    </div>	        
+                </div>
+
+            <!-- End - footer container -->
+
+    
+</div>
+
+            <div class="cleardiv"></div> 
+
+            
+    
+</body>
+</html>
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+

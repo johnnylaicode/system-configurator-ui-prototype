@@ -1,0 +1,344 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Start - Define variable values for HTML head section -->
+        <!-- Start - Define website master global variable values  -->
+        <!-- End - Define website master global variable values -->
+    <!-- End - Define variable values for HTML head section -->
+
+    <!-- Start - HTML head section -->
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta name="viewport" content="width=device-width">
+    <title>XYZCo&nbsp;|&nbsp;Sensor Status</title>
+    <meta name="Keywords" content="" />
+    <meta name="Description" content="" />
+    <!-- End - HTML head section -->
+
+    <!-- Start - External stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/styles/css-all-min.css" />
+    
+    <!-- End - External stylesheet -->
+     
+
+    <!--[if IE]>
+    <style type="text/css" media="screen">
+        #menu ul li {float: left; width: 100%;}
+    </style>
+    <![endif]-->
+    <!--[if lt IE 7]>
+    <style type="text/css" media="screen">
+        body {
+            behavior: url(csshover.htc);
+            font-size: 100%;
+        }
+        #menu ul li a {
+            height: 1%;
+        } 
+        #menu a, #menu h2 {
+            font: bold 0.7em/1.4em arial, helvetica, sans-serif;
+        }
+    </style>
+    <![endif]-->
+
+    <!--[if IE 8]>
+    <!--
+    <style type="text/css" media="screen">
+        body {
+            overflow-y: scroll; /* scroll bar in IE 8 */
+        }
+    </style>
+    <![endif]-->
+    
+    
+    <script type="text/JavaScript" src="./scripts/jquery-2.1.4.min.js"></script> 
+    <script type="text/JavaScript" src="./scripts/jsp_accordionMenu.min.js"></script> 
+    <script type="text/JavaScript" src="./scripts/jsp_passwordVisbleInvisible.min.js"></script> 
+    <script type="text/JavaScript" src="./scripts/jsp_displayConfirmMessage.min.js"></script> 
+    <script type="text/JavaScript" src="./scripts/jsp_showHideDisplay.min.js"></script> 
+    <script type="text/JavaScript" src="./scripts/jsp_checkEmptyDataByElementId.min.js"></script> 
+    <script type="text/JavaScript" src="./scripts/jsp_checkPasswordFormatByElementId.min.js"></script> 
+    <script type="text/JavaScript" src="./scripts/jsp_checkPasswordAndConfirmPasswordByElementIds.min.js"></script> 
+
+</head>
+<body onScroll="document.cookie='scroll_position_y='+window.pageYOffset" onLoad='window.scrollTo(0,0)'>    
+    <!--[if lt IE 7]>
+    <p style="background:#FFC0CB;font-weight:bold;">
+    This website works best with Internet Explore version 7 or later. You are using an older version of Internet Explore.
+    </p>
+    <![endif]-->
+
+    <noscript>
+    <br />
+    <p style="background:#FF0000;font-weight:bold;color:#FFFFFF;">
+    JavaScript is turned off in your web browser. 
+    <br />
+    Please turn it on to take full advantage of this website, then refresh the web page.
+    </p>
+    <br />
+    </noscript>
+        
+    <!-- *************************************
+    Start - OVERALL DOCUMENT WRAPPER CONTAINER 
+    ************************************** -->
+    <div id="doc4-fluid"> <!-- Start - YUI div "doc4" (modified to 1200px width; original width was 974px), "yui-t4" (2 columns, 180px on right) overall document container, 950px width, 2 columns, 180px right column -->
+        <div id="logo-top-fluid" style="position:relative;background-color:#FFFFFF; border:0px solid red;"> <!-- Start - div id="logo-top" -->
+            <div class="left-side"> <!-- Start - div class="left-side" -->
+                    <a href="/home.html" style="margin-left:5px;"><img src="/styles/images/sample-logo-2-80px-red.png" alt="XYZCo.com" title="XYZCo.com" style="height:100%; max-width:200px;position:absolute;bottom:0px;"/></a>
+            </div> <!-- End - div class="left-side" -->
+
+            <div class="right-side"> <!-- Start - div class="right-side" -->
+            </div> <!-- End - div class="right-side" -->
+       </div> <!-- End - div id="logo-top" -->
+
+        <div class="cleardiv"></div> 
+        <div class="cleardiv"></div> 
+
+        <div id="nav-main-top-fluid" style="padding-left:5px;"> <!-- Start - div id="nav-main" -->
+            <div class="left-side" style="border:0px solid green;"> <!-- Start - div id="nav-main" -->
+                <!-- Start - Top menu -->                            
+                <!-- Start - Include user control -->
+                                               
+<!-- Start - Top menu -->                            
+<div id="a-w-block" name="a-w-block" class="a-w">
+    <a id="a-m-b-block" name="a-m-b-block" class="a-m-b m-b-3-l" onclick="toggleDropdown();"></a>
+    
+    <div id="d-c-block" name="d-c-block" class="d-c">
+        <ul id="accordion-block" name="accordion-block" class="accordion">
+            <li>
+                <a href="/admin.html"><div class="link">Administrator</div></a>
+            </li>
+            <li>
+                <a href="/system.html"><div class="link">System Settings</div></a>
+            </li>
+            <li>
+                <a href="/gateway.html"><div class="link">Gateway</div></a>
+            </li>
+            <li>
+                <a href="/local-area-network.html"><div class="link">Local Area Network (LAN)</div></a>
+            </li>
+            <li>
+                <div class="link">Sensor Network<i class="fa fa-chevron-down"></i></div>
+                <ul class="submenu">
+                    <li><a href="/sensor.html">Sensor Configuration</a></li>
+                    <li class="menu-block-bottom-border"><a href="/status-sensor.html">Sensor Status</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/hosting.html"><div class="link">Hosting</div></a>
+            </li>
+                            
+            <li>
+                <a href="/firmware.html"><div class="link">Firmware</div></a>
+            </li>
+            <li>
+                <div class="link">Status<i class="fa fa-chevron-down"></i></div>
+                <ul class="submenu">
+                    <li><a href="/status-system.html">Gateway & LAN Status</a></li>                    <li><a href="/status-sensor.html">Sensor Status</a></li>
+                    <li class="menu-block-bottom-border"><a href="/system-log.html">Status Message Log</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/about2.html"><div class="link">About</div></a>
+            </li>
+            <li>
+                <a href="/index.html"><div class="link">Sign Out</div></a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+<!-- End - Top menu --> 
+
+                <!-- end - Include user control -->
+                <!-- End - Top menu -->  
+            </div>
+
+            <div class="right-side" style="background:transparent;border:0px solid blue;"> <!-- Start - div class="right-side" -->
+
+    
+            </div> <!-- End - div class="right-side" -->
+
+            <div class="cleardiv" style="display:none;"></div> 
+
+            <div id="nav-main-top-fluid-shadow" style="display:none;">
+                <div class="">
+                    <!-- Start - Search box -->
+                    <!-- End - Search box -->
+                </div> 
+            </div>
+        </div> <!-- End - div id="nav-main" -->
+
+        <div class="cleardiv"></div> 
+        
+                
+        <!-- *****************************************
+        Start - DOCUMENT HEADER CONTAINER (Header) 
+        ****************************************** -->  
+        <!-- ***************************************
+        End - DOCUMENT HEADER CONTAINER (Header)
+        **************************************** -->      
+
+
+        <!-- *****************************************
+        Start - DOCUMENT BODY CONTAINER (Content Body) 
+        ****************************************** -->   
+        
+    
+
+
+
+<!-- ************************************** 
+	Start - Generate ContentPlaceHolder
+*************************************** -->
+
+<!-- Start <div id="c-w-f"> -->
+<div id="c-w-f">
+
+    <!-- Start <div id="c-c-f"> -->
+    <div id="c-c-f">
+        
+        <!-- Start <div class="c-i-w-f"> -->
+        <div class="c-i-w-f">
+        
+ 
+            <!-- Start - Panel ID="MainContentPanel" - Use panel to set default button. Also set no postback. -->
+            <div id="MainContentPanel">
+                <h1 id="success-message" style="background-color: lightgreen; text-align: center; color: lightseagreen; margin-bottom: 5px; display: none;">
+                    Operation was successful.
+                </h1>
+
+                <h1 style="background-color: lightblue;">
+                    Sensor Status
+                </h1>
+
+                <!-- Start - Div block with title "Sign In" -->
+                <div class="c-b-s-w-f">
+
+                    <div class="c-b-c"> <!-- Start - div class="c-b-c" -->
+                        <!-- Start - Notice Message Panel -->
+                        <!-- End - Notice Message Panel -->
+
+
+
+                        <div class="cleardiv"></div>
+
+                        <!-- Start - Login Form -->
+
+<!-- Start - Sensor Info Form -->
+        
+        <!-- Start - Temperature -->
+        <div class="m-d-t-f f-s-1-mt">Temperature:</div>
+            <div class="m-d-d-f f-s-1-md">
+                <div class="m-d-d-f f-s-3-md"><span id="TemperatureSensorList" class="u-i"><a href="/sensor-info.html">sensor 1 status data</a></span></div>
+                <div class="cleardiv"></div>
+                <div class="m-d-d-f f-s-3-md"><span id="TemperatureSensorList" class="u-i"><a href="/sensor-info.html">sensor 2 status data</a></span></div>
+                <div class="cleardiv"></div>
+            </div>
+        </div>
+        <div class="cleardiv"></div>
+        <!-- End - Temperature -->
+        
+<!-- End - Sensor Info Form -->
+                        <!-- End - Login Form -->
+
+                    </div>  <!-- End - div class="c-b-c -->    
+
+                </div>			
+                <!-- End - Div block with title "Sign In" -->    
+
+            </div>
+            <!-- End - Panel ID="MainContentPanel" - Use panel to set default button. Also set no postback. -->
+
+
+        </div>
+        <!-- End <div class="c-i-w-f"> -->
+        
+    </div>
+    <!-- End <div id="c-c-f"> -->
+
+</div>
+<!-- End <div id="c-w-f"> -->
+
+<!-- ************************************** 
+	End - Generate ContentPlaceHolder
+*************************************** -->
+
+<!--
+        <div id="left-column" style="display:none;">
+
+I am left column
+
+        </div>
+
+
+        <div id="right-column" style="display:none;">
+
+I am right column
+
+        </div>
+
+
+        <div class="cleardiv"></div> 
+
+-->                            
+                            
+
+    </div>  <!-- End - YUI div "doc4" (974px width), "yui-t4" (2 columns, 180px on right) overall document container, 950px width, 2 columns, 180px right column -->
+    <!-- ***********************************
+    End - OVERALL DOCUMENT WRAPPER CONTAINER
+    ************************************ -->  
+
+    
+
+
+<div id="ft">
+    
+
+            <!-- Start - footer container -->
+
+            <div id="nav-main-footer-fluid">
+                <div class="left-side">
+                <!-- Start - Footer menu --> 
+                <!-- End - Footer menu -->  
+                </div>
+                <div class="right-side"> 
+                    &nbsp;
+                </div>
+            </div>		     		        
+
+            <div class="cleardiv"></div> 
+
+                <div id="footer-sub">
+                    <div style="text-align:-moz-center;"> <!-- Center for Firefox -->
+                                Copyright &copy; 
+                                All rights reserved.
+                    </div>	        
+                </div>
+
+            <!-- End - footer container -->
+
+    
+</div>
+
+            <div class="cleardiv"></div> 
+
+            
+    
+</body>
+</html>
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
